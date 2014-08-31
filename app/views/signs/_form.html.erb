@@ -1,0 +1,5 @@
+<%= form_for :sign, :url => throws_path do |f| %>
+  <%= f.label :name, 'Your move:' %>
+  <%= f.select :name, Sign::NAMES %> <br>
+  <%= f.submit 'Fight!', class: "btn btn-lg btn-danger" %>
+<% end %>
